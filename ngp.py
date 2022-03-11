@@ -1,22 +1,21 @@
 import random
 import os
 import time
-from colorama import Fore, Back, Style
 while True:
     a = [1, 2, 3]
     random.shuffle(a)
-    print(Back.RED + "Выберете" + Style.RESET_ALL)
-    print(Back.GREEN + Fore.RED + "1 " + Fore.WHITE + "Камень")
-    print(Fore.RED + "2 " + Fore.WHITE + "Ножницы")
-    print(Fore.RED + "3 " + Fore.WHITE + "Бумага")
-    print(Fore.RED + "0 " + Fore.WHITE + "информация")
+    print("Выберете")
+    print("1 Камень")
+    print("2 Ножницы")
+    print("3 Бумага")
+    print("0 информация")
     p = int(input())
     os.system('cls||clear')
-    if (p == 1):print(Back.CYAN + Fore.BLACK  + "Вы выбрали" + Fore.BLACK + " КАМЕНЬ")
+    if (p == 1):print("Вы выбрали КАМЕНЬ")
         
-    elif (p == 2):print("Вы выбрали" " НОЖНИЦЫ")
+    elif (p == 2):print("Вы выбрали НОЖНИЦЫ")
             
-    elif (p == 3):print("Вы выбрали" " БУМАГУ" + Style.RESET_ALL)
+    elif (p == 3):print("Вы выбрали БУМАГУ")
 
     else:print("ВЫ ВЫБРАЛИ НЕПРАВИЛЬНОЕ ЗНАЧЕНИЕ ! ПОПРОБУЙТЕ ЕЩЁ РАЗ!")
     #print(a[0])
